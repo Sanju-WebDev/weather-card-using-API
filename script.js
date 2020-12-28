@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
             //weatherstack API 76835d47b02779831f7498df21680084
             //openweathermap API 891d86115633619d90074c60672ac0d9
         //if api not working, get proxy
-            const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
+            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
             fetch(api)
                 .then( respond => {
                     return respond.json();
