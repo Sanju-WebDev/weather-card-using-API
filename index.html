@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="weather app, weather card, weather api, geolocation, api, live weather"/>
+    <meta name="description" content="A weather card showing the weather of your current location by using geolocation services. It uses the data obtained from your geolocator to fetch the weather details of your location using API services of openweathermap. A simple vanilla javascript project."/>
+    <meta name="author" content="Manjunath-A, amanjunathmanju4@gmail.com">
+    <title>Weather Card</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--the original weather card-->
+<div class= "weather-card">    
+    <h1 class = "location">No Data</h1>
+    <div class = "icon"><img id = "icon" src="weather-icons/unknown.png" alt= "weather icon"></div>
+    <div class = "summary">No Data</div>
+    <div class = "temperature">
+        <h2 class = "temp">-</h2>
+        <span class="unit">F</span>
+    </div>
+</div>
+<!--a duplicate layer to give a shadow effect to our card-->
+<div class= "weather-card-clone">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
